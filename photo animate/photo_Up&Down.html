@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Message</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+        .container {
+            text-align: center;
+        }
+
+        .greeting-image {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="header">
+    <button onclick="reloadPage()">Reload</button>
+</div>
+<div class="container">
+    <h3>আপনার প্রিয়জনকে স্পেশাল ভাবে উইশ করুন</h3>
+</div>
+<div class="container">
+    <h1>Birthday Greetings!</h1>
+    <p id="Main-message"></p>
+    <img src="image\images.png" alt="Greeting Image" class="greeting-image">
+    <button onclick="YourName()">Enter Your Name</button>
+    <button onclick="FrndName()">Enter Friend Name</button>
+    <button id="copyLinkButton" onclick="copyShareLink()" style="display: none;">Copy Share Link</button>
+    <input type="text" id="shareLinkInput" readonly>
+</div>
+<div class="footer">
+    <h6>Dev: Mallick</h6>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
